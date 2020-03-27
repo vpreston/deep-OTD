@@ -9,7 +9,7 @@ from rhs import rhs_3D
 if __name__ == '__main__':
 
     notd = 3   	   # Number of dOTD modes to be learned
-    npts = 10      # Number of training points
+    npts = 30      # Number of training points
     rhs = rhs_3D   # Right-hand side in governing equations
 
     ### Generate long trajectory

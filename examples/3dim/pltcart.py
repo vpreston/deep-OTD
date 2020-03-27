@@ -79,7 +79,7 @@ for ind in inds:
         a = Arrow3D([x[ind], sc*mode[ind,0]+x[ind]], \
                     [y[ind], sc*mode[ind,1]+y[ind]], \
                     [z[ind], sc*mode[ind,2]/2+z[ind]], \
-                    **arrow_prop_dict, color=colors[ii], zorder=100)
+                    color=colors[ii], zorder=100, **arrow_prop_dict)
         ax.add_artist(a)
 
 for aa in [ax.xaxis, ax.yaxis, ax.zaxis]:
@@ -95,7 +95,7 @@ arz = Arrow3D([0, 0], [0, 0], [0, 0.19], **arrow_prop_dict)
 for a in [arx, ary, arz]:
     ax.add_artist(a)
 
-a = Arrow3D([0, 0], [0, 0], [0.11, 0.19], **arrow_prop_dict, zorder=100)
+a = Arrow3D([0, 0], [0, 0], [0.11, 0.19], zorder=100, **arrow_prop_dict)
 ax.add_artist(a)
 
 ax.set_xlim(-0.3, 0.3)
