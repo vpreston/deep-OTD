@@ -22,7 +22,7 @@ class dOTDModel:
         """
         rs = npr.RandomState(rseed)
         return [ (rs.randn(insize, outsize)*np.sqrt(2/(insize+outsize)),   
-                  rs.randn(outsize)*0.0)
+                  rs.randn(outsize))
                  for insize, outsize in zip(self.layer_sizes[:-1], 
                                             self.layer_sizes[1:]) ]
 
